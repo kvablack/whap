@@ -3,6 +3,22 @@
        "debateleft.png", ["continue...", 4],
        "end.png", ["the end"]
 		]
+function init() { //check for IE before rendering first panel
+
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, display error message
+    {
+        body.innerHTML = "Please use an updated version of Firefox or Chrome to view this site.";
+    }
+    else  // If another browser, continue
+    {
+        renderNext(0);
+    }
+
+}
+
 
 function choose(text, name) {
     var placeholders = document.getElementsByClassName("option-placeholder");
