@@ -4,19 +4,9 @@
        "end.png", ["the end"]
 		]
 function init() { //check for IE before rendering first panel
-
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, display error message
-    {
-        body.innerHTML = "Please use an updated version of Firefox or Chrome to view this site.";
-    }
-    else  // If another browser, continue
-    {
-        renderNext(0);
-    }
-
+	var body = document.getElementsByTagName("body")[0];
+    body.innerHTML = ""; //in IE, this Javascript will not even compile, so the body will continue to be an error message
+    renderNext(0);
 }
 
 
