@@ -69,3 +69,11 @@ function cleanUp() {
        
     }
 }
+
+function getName() {
+        var name = prompt("What is your name?", "");
+        if (((name === null) || (name === undefined)) || (name === "")) {
+                name = "Erdoğan";
+        }
+        return name;
+}
