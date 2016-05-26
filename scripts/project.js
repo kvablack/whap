@@ -1,18 +1,21 @@
 function msieversion() { //check for IE
 
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
-    {
+    if (/MSIE 10/i.test(navigator.userAgent)) {
+        // This is internet explorer 10
         return true;
     }
-    else 
-    {
-        return false;
+
+    if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+        // This is internet explorer 9 or 11
+        return true;
     }
 
+    if (/Edge\/\d./i.test(navigator.userAgent)){
+    // This is Microsoft Edge
+        return true;
+    }
     return false;
+
 }
 
 function init() { //check for IE before rendering first panel (just assuming this works, haven't tested yet)
