@@ -1,189 +1,23 @@
-@font-face 
-{ 
-    font-family: xkcd; src: url('xkcd.otf'); 
+h1 {
+    text-align: center;
 }
 
-#comic {
-    width: 660px;
-    margin: 0 auto;
-    margin-bottom: 400px
+.p-head {
+    text-decoration:underline;
 }
-{
-    position: relative;
-    font-family: 'xkcd';
-    font-variant: normal;
-    color: #242424;
-    text-align: left
+
+.options-wrapper {
+    width:100%;
+    text-align:center;
+    margin-top:2%;
 }
-.panel {
-    display: inline-block;
-    opacity: 0;
-    -webkit-transform: translate(-20px, 0);
-    -moz-transform: translate(-20px, 0);
-    -o-transform: translate(-20px, 0);
-    -ms-transform: translate(-20px, 0);
-    transform: translate(-20px, 0)
+
+.option-left {
+    float:left;
+    margin-left:10%;
 }
-.panel.animate {
-    transition: all .25s
-}
-.panel.showing {
-    opacity: 1;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none
-}
-.panel .option-placeholder {
-    background: #ddd;
-    border-radius: 5px
-}
-.options {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0;
-    margin-top: 2px;
-    padding: 3px 0;
-    background: #ddd;
-    border: 2px solid #666;
-    border-radius: 5px;
-    text-align: left;
-    z-index: 200;
-    transition: all .25s;
-    opacity: 0;
-    -webkit-transform: translate(0, -10px);
-    -moz-transform: translate(0, -10px);
-    -o-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
-    transform: translate(0, -10px)
-}
-.options.showing {
-    opacity: 1;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none
-}
-.options:before,
-.options:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 8px solid transparent;
-    top: -16px;
-    left: 50%;
-    margin-left: -4px
-}
-.options:before {
-    border-bottom-color: #666;
-    margin-top: -2px
-}
-.options:after {
-    border-bottom-color: #ddd
-}
-.options li {
-    list-style-type: none;
-    clear: both;
-    padding-right:10px;
-    padding-left: 10px;
-    padding-bottom:5px;
-    padding-top:5px;
-    cursor: pointer;
-    overflow: hidden
-}
-.options li:hover,
-.options:not(:hover) li.focus {
-    background: #eee
-}
-.options .option-choose {
-    position: absolute;
-    left: 5px;
-    margin: 0;
-    background: #fafafa;
-    color: #777;
-    border: 1px solid #777;
-    border-radius: 3px;
-    margin-right: 7px;
-    padding: 1px 0;
-    min-width: 18px;
-    cursor: pointer
-}
-.options .option-choose:focus {
-    outline: none
-}
-.options .option-writein-box {
-    display: block;
-    overflow: hidden
-}
-.options .option-writein {
-    margin: 0;
-    width: 100%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #777
-}
-.options .option-writein:focus {
-    outline: none
-}
-.options.final {
-    font-size: .85em;
-    text-align: center
-}
-.options.final:before,
-.options.final:after {
-    display: none
-}
-.options.final .option-choose {
-    opacity: 0
-}
-.options.final .option-line {
-    padding-left: 7px
-}
-.rollback,
-.permalink {
-    margin: 0;
-    font-family: xkcd;
-    color: black;
-    background: #ddd;
-    border: 2px solid #666;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 200
-}
-.rollback {
-    position: absolute;
-    left: -8px;
-    bottom: 5px;
-    font-size: 25px;
-    width: 29px;
-    height: 29px;
-    line-height: 20px;
-    padding: 0;
-    padding-bottom: 5px;
-    padding-right: 3px;
-    transition: all .25s ease;
-    opacity: 0;
-    -webkit-transform: translate(4px, 0);
-    -moz-transform: translate(4px, 0);
-    -o-transform: translate(4px, 0);
-    -ms-transform: translate(4px, 0);
-    transform: translate(4px, 0)
-}
-.rollback.showing {
-    opacity: 1;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none
-}
-.rollback:focus {
-    outline: none;
-    background: #eee
-}
+
+.option-right {
+    float:right;
+    margin-right:10%;
 }
