@@ -4,7 +4,16 @@
 }
 
 h1 {
+	font-family:'PT Serif';
     text-align: center;
+    font-variant: small-caps;
+    font-size:5em;
+    display:none;
+}
+
+#fancy-hr {
+	display: block;
+    margin: 0 auto;
 }
 
 .p-head {
