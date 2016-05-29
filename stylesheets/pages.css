@@ -10,13 +10,14 @@ td {
 }
 
 html,body {
-    background: url("../resources/constantinople.png");
+    background: url("../resources/constantinople.png") no-repeat center bottom;
     background-repeat: no-repeat;
-    ackground-attachment:fixed;
+    background-attachment:fixed;
     background-position:center bottom;
     background-color:#644b6d;
     background-position: 0% 100%;
     height:100%;
+    min-height: 100%; 
     margin:0;
 }
 
