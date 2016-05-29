@@ -37,7 +37,7 @@ function choose(file) { //takes an html file as an argument and appends the file
         $("body").append($div);
         $('#name').text('"' + name + '."').html();
         $div.fadeIn("medium");
-        $('html, body').animate({scrollTop:$(document).height() - $(window).height()}, 'slow'); //smooth scroll to bottom of page
+        scroll();
     });
 }
 
@@ -55,4 +55,8 @@ function getPersonalInfo() {
 
 function refresh() {
     location.reload();
+}
+
+function scroll() {
+    $('html, body').animate({scrollTop:$(document).height() - $(window).height()}, 'slow'); //smooth scroll to bottom of page
 }

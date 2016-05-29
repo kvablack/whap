@@ -54,6 +54,11 @@ hr {
     color:red;
 }
 
+img {
+    width:300px;
+    float:center;
+    display:block;
+}
 
 /* CUSTOM NAVBAR */
 .navbar-default {
