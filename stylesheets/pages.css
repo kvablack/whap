@@ -6,6 +6,7 @@
 td {
     font-size:1.5em;
     font-family:'Patrick Hand SC';
+    color:#eee;
 }
 
 html,body {
@@ -13,7 +14,7 @@ html,body {
     background-repeat: no-repeat;
     ackground-attachment:fixed;
     background-position:center bottom;
-    background-color:#dcd7de;
+    background-color:#644b6d;
     background-position: 0% 100%;
     height:100%;
     margin:0;
@@ -25,12 +26,20 @@ h1 {
     font-variant: small-caps;
     font-size:5em;
     display:none;
+    color:white;
+}
+
+h4 {
+    font-family:'Marcellus';
+    text-align:center;
+    color:#eee;
 }
 
 .person {
     font-family:'Marcellus';
     font-size:2em;
     padding:1em;
+    color:white;
 }
 
 #fancy-hr {
