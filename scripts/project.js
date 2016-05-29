@@ -32,9 +32,12 @@ function init() { //check for IE before rendering first panel (just assuming thi
 function choose(file) { //takes an html file as an argument and appends the file to the body
     $(".options-wrapper").last().children().attr("onclick", ""); //disable buttons on last decision page
     $.get("static/" + file, function(data){
-        $("body").append(data);
+        var $div = $("<div>", {class: "section-wrapper"});
+        $div.html(data);
+        $("body").append($div);
         $("#name").html('"' + name + '."');
-        $('html, body').animate({scrollTop:$(document).height()}, 'medium'); //smooth scroll to bottom of page
+        $div.fadeIn("medium");
+        $('html, body').animate({scrollTop:$(document).height() - $(window).height()}, 'slow'); //smooth scroll to bottom of page
     });
 }
 
