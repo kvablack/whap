@@ -27,3 +27,8 @@ function init() { //check for IE before rendering first panel (just assuming thi
     }
 }   
 
+function choose(file) { //takes an html file as an argument and appends the file to the body
+    $.get("static/" + file, function(data){
+        $("body").append(data);
+    });
+}
