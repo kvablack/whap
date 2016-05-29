@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Aquino'; /*a name to be used later*/
+    src: url(aquino.ttf); /*URL to font*/
+}
+
+h1 {
+	font-family:'PT Serif';
+    text-align: center;
+    font-variant: small-caps;
+    font-size:5em;
+    display:none;
+}
+
+#fancy-hr {
+	display: block;
+    margin: 0 auto;
+}
+
+.p-head {
+    text-decoration:underline;
+}
+
+.options-wrapper {
+    width:100%;
+    text-align:center;
+    margin-top:2%;
+    margin-bottom:2%;
+    position:relative;
+    min-height:20px;
+}
+
+.option-left {
+    float:left;
+    min-width:5%;
+    margin-left:13%;
+}
+
+.option-right {
+    float:right;
+    min-width:5%;
+    margin-right:13%;
+}
+
+.option-only {
+    min-width:5%;
+}
+
+
+hr {
+    clear:both;
+    width:100%;
+}
+
+
+
+
+/* CUSTOM NAVBAR */
+.navbar-default {
+	font-family:'Aquino';
+    background-color: #53385d;
+    border-color: #baafbe;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ccc;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #291c2e;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #D5D5D5;
+}
+
+/* LOGO SETTINGS */
+.navbar-brand {
+  padding: 0px;
+  background: url("../resources/logo_white.png") center / contain no-repeat;
+  width: 200px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
