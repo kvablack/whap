@@ -34,6 +34,7 @@ function choose(file) { //takes an html file as an argument and appends the file
     $.get("static/" + file, function(data){
         $("body").append(data);
         $("#name").html('"' + name + '."');
+        $('html, body').animate({scrollTop:$(document).height()}, 'medium'); //smooth scroll to bottom of page
     });
 }
 
