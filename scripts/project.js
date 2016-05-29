@@ -1,3 +1,5 @@
+var name;
+
 function msieversion() { //check for IE
 
     if (/MSIE 10/i.test(navigator.userAgent)) {
@@ -31,4 +33,16 @@ function choose(file) { //takes an html file as an argument and appends the file
     $.get("static/" + file, function(data){
         $("body").append(data);
     });
+}
+
+function getPersonalInfo() {
+    var s = $("#name").val();
+    if (s === null || s === undefined || s === "") {
+        name = "Erdogan";
+        $("#name").val("Erdogan");
+    }
+    else {
+        name = s;
+    }
+    choose("primary_decision.html");
 }
