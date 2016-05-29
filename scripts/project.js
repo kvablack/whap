@@ -32,14 +32,15 @@ function init() { //check for IE before rendering first panel (just assuming thi
 function choose(file) { //takes an html file as an argument and appends the file to the body
     $.get("static/" + file, function(data){
         $("body").append(data);
+        $("#name").html('"' + name + '."');
     });
 }
 
 function getPersonalInfo() {
-    var s = $("#name").val();
+    var s = $("#name_input").val();
     if (s === null || s === undefined || s === "") {
         name = "Erdogan";
-        $("#name").val("Erdogan");
+        $("#name_input").val("Erdogan");
     }
     else {
         name = s;

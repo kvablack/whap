@@ -42,7 +42,13 @@ hr {
     width:100%;
 }
 
+.friendly-dialogue {
+    color:green;
+}
 
+.enemy-dialogue {
+    color:red;
+}
 
 
 /* CUSTOM NAVBAR */
