@@ -52,3 +52,7 @@ function getPersonalInfo() {
     }
     choose("primary_decision.html");
 }
+
+function refresh() {
+    location.reload();
+}
