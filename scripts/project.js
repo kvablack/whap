@@ -30,6 +30,7 @@ function init() { //check for IE before rendering first panel (just assuming thi
 }   
 
 function choose(file) { //takes an html file as an argument and appends the file to the body
+    $(".options-wrapper").last().children().attr("onclick", ""); //disable buttons on last decision page
     $.get("static/" + file, function(data){
         $("body").append(data);
         $("#name").html('"' + name + '."');
