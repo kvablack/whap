@@ -58,5 +58,9 @@ function refresh() {
 }
 
 function scroll() {
-    $('html, body').animate({scrollTop:$(".section-wrapper").last().offset().top}, 'slow'); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
+    scrollto = $(".section-wrapper").last().offset();
+    if (scrollto != undefined && scrollto != null) {
+         $('html, body').animate({scrollTop:scrollto.top}, 'slow'); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
+    }
+   
 }
