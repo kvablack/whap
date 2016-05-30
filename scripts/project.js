@@ -37,7 +37,7 @@ function choose(file) { //takes an html file as an argument and appends the file
         $div.html(data);
         $("body").append($div);
         $('#name').text('"' + name + '."').html();
-        $div.fadeIn("1000");
+        $div.fadeIn(1000);
         scroll();
     });
 }
@@ -61,7 +61,10 @@ function refresh() {
 function scroll() {
     scrollto = $(".section-wrapper").last().offset();
     if (scrollto != undefined && scrollto != null) {
-         $('html, body').animate({scrollTop:scrollto.top}, 1000); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
+        setTimeout(function() {
+            $('html, body').animate({scrollTop:scrollto.top}, 1000); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
+        }, 500);
+         
     }
    
 }
