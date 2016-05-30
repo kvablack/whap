@@ -49,9 +49,9 @@ label {
 .text-block {
     color:#ddd;
     font-family:'Montserrat';
-    line-height: 150%;
-    margin-left:1em;
-    margin-right:1em;
+    line-height: 175%;
+    margin-left:4em;
+    margin-right:4em;
 }
 
 .options-wrapper {
@@ -85,6 +85,11 @@ label {
     min-width:5%;
 }
 
+#fancy-hr {
+    display: block;
+    margin: 0 auto;
+}
+
 .option-only:hover {
   background: #8a507c;
   text-decoration: none;
@@ -98,14 +103,14 @@ hr {
 
 .friendly-dialogue {
     color:cyan;
-    margin-left:1em;
-    margin-right:1em;
+    margin-left:4em;
+    margin-right:4em;
 }
 
 .enemy-dialogue {
     color:Coral;
-    margin-left:1em;
-    margin-right:1em;
+    margin-left:4em;
+    margin-right:4em;
 }
 
 #title-img {
