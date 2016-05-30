@@ -58,5 +58,5 @@ function refresh() {
 }
 
 function scroll() {
-    $('html, body').animate({scrollTop:$(document).height() - $(window).height()}, 'slow'); //smooth scroll to bottom of page
+    $('html, body').animate({scrollTop:$(".section-wrapper").last().offset().top}, 'slow'); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
 }
