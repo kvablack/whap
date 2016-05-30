@@ -74,9 +74,19 @@ h4 {
 }
 
 .option-only {
+    color: #ffffff;
+    font-size: 15px;
+    background: #763366;
+    padding: 10px 20px 10px 20px;
+    border: solid #61115d 2px;
+    text-decoration: none;
     min-width:5%;
 }
 
+.option-only:hover {
+  background: #8a507c;
+  text-decoration: none;
+}
 
 hr {
     clear:both;
