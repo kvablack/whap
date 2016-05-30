@@ -42,10 +42,16 @@ html,body {
     color: #a99bae;
 }
 
+label {
+    color:white;
+}
+
 .text-block {
     color:#ddd;
     font-family:'Montserrat';
     line-height: 150%;
+    margin-left:1em;
+    margin-right:1em;
 }
 
 .options-wrapper {
