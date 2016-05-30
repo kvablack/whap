@@ -61,7 +61,7 @@ function refresh() {
 function scroll() {
     scrollto = $(".section-wrapper").last().offset();
     if (scrollto != undefined && scrollto != null) {
-         $('html, body').animate({scrollTop:scrollto.top}, 'slow'); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
+         $('html, body').animate({scrollTop:scrollto.top}, 1000); //smooth scroll to next section wrapper to make sure it doesn't go off the top of the screen
     }
    
 }
