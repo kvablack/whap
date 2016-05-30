@@ -21,12 +21,15 @@ html,body {
     margin:0;
 }
 
+#body-wrapper {
+    display:none;
+}
+
 h1 {
 	font-family:'PT Serif';
     text-align: center;
     font-variant: small-caps;
     font-size:5em;
-    display:none;
     color:white;
 }
 

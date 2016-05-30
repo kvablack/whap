@@ -20,11 +20,12 @@ function msieversion() { //check for IE
 
 }
 
-function init() { //check for IE before rendering first panel (just assuming this works, haven't tested yet)
+function init() { //check for IE before rendering first panel
     if (msieversion()) {
         $("body").html("Please use an updated version of Firefox or Chrome to view this site.");
     }
     else {
+        $(".section-wrapper").fadeIn(1000);
 
     }
 }   
@@ -36,7 +37,7 @@ function choose(file) { //takes an html file as an argument and appends the file
         $div.html(data);
         $("body").append($div);
         $('#name').text('"' + name + '."').html();
-        $div.fadeIn("medium");
+        $div.fadeIn("1000");
         scroll();
     });
 }
