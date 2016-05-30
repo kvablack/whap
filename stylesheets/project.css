@@ -63,19 +63,7 @@ label {
     min-height:20px;
 }
 
-.option-left {
-    float:left;
-    min-width:5%;
-    margin-left:13%;
-}
-
-.option-right {
-    float:right;
-    min-width:5%;
-    margin-right:13%;
-}
-
-.option-only {
+.option-left, .option-right, .option-only {
     color: #ffffff;
     font-size: 15px;
     background: #763366;
@@ -85,16 +73,25 @@ label {
     min-width:5%;
 }
 
-#fancy-hr {
-    display: block;
-    margin: 0 auto;
-}
-
-.option-only:hover {
+.option-left:hover, .option-right:hover, .option-only:hover{
   background: #8a507c;
   text-decoration: none;
 }
 
+.option-left {
+    float:left;
+    margin-left:13%;
+}
+
+.option-right {
+    float:right;
+    margin-right:13%;
+}
+
+#fancy-hr {
+    display: block;
+    margin: 0 auto;
+}
 
 hr {
     clear:both;
