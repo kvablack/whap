@@ -1,6 +1,7 @@
+/* Custom font for navbar links */
 @font-face {
-    font-family: 'Aquino'; /*a name to be used later*/
-    src: url(aquino.ttf); /*URL to font*/
+    font-family: 'Aquino'; 
+    src: url(aquino.ttf); 
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
     color:white;
 }
 
+/* Background Image and Formatting */
 html,body {
     background: url("../resources/constantinople.png") no-repeat center bottom;
     background-repeat: no-repeat;
@@ -27,12 +29,6 @@ html,body {
     display:none;
 }
 
-.p-head {
-    color:white;
-    font-family:'Aquino';
-    text-align:center;
-}
-
 #print {
     font-size:0.8em;
     text-align:center;
@@ -44,6 +40,12 @@ html,body {
 
 label {
     color:white;
+}
+
+.p-head {
+    color:white;
+    font-family:'Aquino';
+    text-align:center;
 }
 
 .text-block {
