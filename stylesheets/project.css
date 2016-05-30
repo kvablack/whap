@@ -97,11 +97,15 @@ hr {
 }
 
 .friendly-dialogue {
-    color:green;
+    color:cyan;
+    margin-left:1em;
+    margin-right:1em;
 }
 
 .enemy-dialogue {
-    color:red;
+    color:Coral;
+    margin-left:1em;
+    margin-right:1em;
 }
 
 #title-img {
